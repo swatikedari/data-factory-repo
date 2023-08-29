@@ -1,0 +1,9 @@
+{
+	"name": "sdemoadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "db68d386-5406-4c71-9912-bef198e19ed3",
+		"tenantId": "27d60dd6-3578-4ef8-9664-d3a7a13ed958"
+	}
+}
