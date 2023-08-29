@@ -1,0 +1,52 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "pamper_raw_file.csv",
+				"container": "rawfile"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "BatchId",
+				"type": "String"
+			},
+			{
+				"name": "PlantName",
+				"type": "String"
+			},
+			{
+				"name": "ProductionLine",
+				"type": "String"
+			},
+			{
+				"name": "ProductType",
+				"type": "String"
+			},
+			{
+				"name": "Size",
+				"type": "String"
+			},
+			{
+				"name": "ProductionDate",
+				"type": "String"
+			},
+			{
+				"name": "Quality Check",
+				"type": "String"
+			}
+		]
+	}
+}
